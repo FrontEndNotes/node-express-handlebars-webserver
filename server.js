@@ -44,8 +44,7 @@ hbs.registerHelper('getCurrentYear', ()=>{
 
 
 app.get('/', (req, res) => {
-    //res.send('hello world!');  
-    
+
     //render - render a page based on a template
     res.render('home.hbs', {
         pageTitle: 'Home Page',
@@ -54,6 +53,7 @@ app.get('/', (req, res) => {
 });
 
 
+// http://localhost:3000/json
 app.get('/json', (req, res) => {
     res.send({
         title: "note title",
@@ -65,9 +65,16 @@ app.get('/json', (req, res) => {
 // http://localhost:3000/about
 app.get('/about', (req, res) => {
 
-    //render - render a page based on a template
     res.render('about.hbs', {
         pageTitle: 'About page'
+    })    
+});
+
+// http://localhost:3000/contact
+app.get('/contact', (req, res) => {
+
+    res.render('contact.hbs', {
+        pageTitle: 'Contact page'
     })    
 });
 
