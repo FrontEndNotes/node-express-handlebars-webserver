@@ -29,8 +29,4 @@ http://localhost:3000
 
 ### Demo
 
-Open demo on heroku
-
-```
-https://fast-tundra-86633.herokuapp.com
-```
+[Open demo](https://fast-tundra-86633.herokuapp.com) on heroku
